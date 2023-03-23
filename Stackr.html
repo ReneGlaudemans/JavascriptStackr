@@ -5,12 +5,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
           integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="Weather.js" type="module"></script>
-    <script src="Shape.js" type="module"></script>
+
     <link rel="stylesheet" href="Stackr.css">
     <title>Stackr</title>
 </head>
 <body class="columns is-gapless">
+<div class="column" id="truckcontainer" style="display:flex">
+    <button id="addTruck" onclick="simulate()" class="button">Truck toevoegen</button>
+    <canvas id="board" class="truck"></canvas>
+</div>
 <div class="column">
     <div class="lopendeband">
         <canvas id="square" draggable="true"></canvas>
@@ -20,10 +23,7 @@
         <canvas id="skew" draggable="true"></canvas>
     </div>
 </div>
-<div class="column" style="display:flex">
-    <div class="truck"></div>
-    <div class="truck"></div>
-</div>
+
 <div class="column">
     <div class="control">
         <label for="city">Stad:</label>
@@ -37,5 +37,12 @@
     <p id="temp"></p>
     <p id="wind"></p>
 </div>
+<script src="Weather.js" ></script>
+<script src="Shape.js" ></script>
+<script src="Constants.js" ></script>
+<script src="Piece.js" ></script>
+<script src="Truck.js"></script>
+<script src="Main.js" ></script>
+
 </body>
 </html>
