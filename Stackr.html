@@ -6,9 +6,24 @@
           integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="Weather.js" type="module"></script>
+    <script src="Shape.js" type="module"></script>
+    <link rel="stylesheet" href="Stackr.css">
     <title>Stackr</title>
 </head>
-<body class="columns">
+<body class="columns is-gapless">
+<div class="column">
+    <div class="lopendeband">
+        <canvas id="square" draggable="true"></canvas>
+        <canvas id="straight" draggable="true"></canvas>
+        <canvas id="T" draggable="true"></canvas>
+        <canvas id="L" draggable="true"></canvas>
+        <canvas id="skew" draggable="true"></canvas>
+    </div>
+</div>
+<div class="column" style="display:flex">
+    <div class="truck"></div>
+    <div class="truck"></div>
+</div>
 <div class="column">
     <div class="control">
         <label for="city">Stad:</label>
