@@ -16,8 +16,11 @@ class Piece {
             row.forEach((value, x) => {
                 if(value > 0){
                     this.ctx.fillRect(this.x + x,this.y +y ,1,1);
+
                 }
             })
         } )
+        this.ctx.setAttribute('draggable', true);
+
     }
 }
